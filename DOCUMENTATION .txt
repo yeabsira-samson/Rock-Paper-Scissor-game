@@ -1,0 +1,50 @@
+DOCUMENTATION 
+
+ PROJECT TITLE : ROCK PAPER SCISSOR GAME
+
+This documentation aims to explain the purpose of each function, the logic behind it, and how it all comes together in the driver code for the Rock Paper Scissor game. 
+
+DESCRIBTION
+
+This project aim is to entertain users.The user can play with the computer or other player based on it's interest and the user is givin plenty of chance to play the game and when the user input an invalid input the game will end and also we have given the user chance to end the game before playing the game.we did the project by using a function and a switch statement and some library like cstdlib,ctime,iostream and stdlib.h.
+
+Short example of how the code work 
+ 
+If the user want to play with the computer then first the player will input r for rock ,p for paper and s for scissor then next the we will go to the computer move.The computer move will gernerate randomly by using srand and rand from cstlib.
+
+If the player move is p
+And the computer move is r
+Then by going to the result function then we will get a display that say  oh !computer won the game 
+
+And if the player want to play with other player then bothe the players have to input r for rock, p for paper and s for scissor 
+
+If player 1 input s
+If player 2 input r
+Then by going to the result function we will get a display that say Congratulations! player 2 won the game and try next time player 1 
+
+FUNCTION
+
+Now we are going to see the function that we use in the project and what is there use int the project
+
+char getComputerMove() : to get the computer move 
+
+int getResults(char playerMove, char computerMove) :function to return the result of the game of player and computer 
+
+    char computerMove = getComputerMove(): get computer move to check the result then
+
+ char getplayermove1() : to get the player one move 
+
+ char getplayermove2() : to get the player two move 
+
+int getResult(char playermove1, char playermove2) : function to return the reesult of the game of player one and two
+
+int main() : driver code
+
+CHALLENGES THAT WE FACE WHEN DOING THE PROJICT AND HOW WE SOLVE THEM
+
+We have faced some challenges doing this project.We will see them now.
+
+1.we forgot the brace of the switch statement and we couldn't run the program
+2.we couldn't loop the program likr it end after one move then we use the goto statement and we could loop the statement by jumping to the label we give 
+3.we couldn't end the program after we start the loop and after we use the exit function and we could end the loop
+4.we said get playerone move and player two move after we input it by using cin and it result a run time error that say game drawn every time by avioding that we  corrected that error
